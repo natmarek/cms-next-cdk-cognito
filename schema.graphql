@@ -1,0 +1,17 @@
+type Mutation {
+	setPage(input: pageInput!): page
+}
+
+type Query {
+	getPage(docId: String!): page
+}
+
+type page {
+	id: String!
+	title: String!
+}
+
+input pageInput {
+	title: String
+	description: String
+}
